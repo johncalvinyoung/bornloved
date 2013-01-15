@@ -7,7 +7,7 @@ Bornloved::Application.routes.draw do
   get :media, :to => 'born_loved#media'
   get :schedule, :to => 'born_loved#schedule'
 
-  resources :speakers, :only => [:show]
+  resources :speakers, :only => [:show, :index]
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
