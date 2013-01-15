@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title Born Loved -- OICCU Main Event Week 2013
+    =stylesheet_link_tag :application
+    =javascript_include_tag :application
+    =csrf_meta_tags
+  %body
+    .container
+      #header
+        = render 'header'
+      #content
+        = yield
+      .clearfix
+      .push
+    #footer
+      = render 'footer'

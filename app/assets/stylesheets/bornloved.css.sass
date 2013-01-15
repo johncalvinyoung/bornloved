@@ -1,0 +1,87 @@
+@import "bootstrap"
+@import 'compass'
+@import url(http://fonts.googleapis.com/css?family=Walter+Turncoat)
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,400,700)
+
+*
+  margin: 0
+
+html, body
+  height: 100%
+  width: 100%
+
+a, a:hover
+  color: #000000
+
+
+body
+  /*background-color: #3e4031 */
+  padding: 0px
+  background-image: url('/assets/background.png')
+  background-repeat: image-y
+  background-position: center
+
+.container
+  // margin-top: 0px
+  // margin-bottom: 0px
+  background-color: rgb(255,254,226)
+  height: auto !important
+  height: 100%
+  min-height: 100%
+  margin: 0 auto -300px
+
+#header
+  img
+    width: 368px
+    height: 190px
+  padding: 10px
+
+  #main_navigation
+    font-size: 30px
+    color: #df0e1a
+    float: right
+    margin-top: 125px
+    font-family: 'Walter Turncoat', cursive
+    width: 542px
+    a
+      color: #df0e1a
+    ul
+      padding: 0px
+      margin: 0px
+      li
+        list-style-type: none
+        float: left
+        position: relative
+        padding-right: 20px
+    .clearfix
+      font-size: 3px
+      clear: both
+
+
+#content
+  font-family: 'Vollkorn', serif
+  font-size: 26px
+  text-align: center
+  line-height: 30px
+  p
+    width: 750px
+    margin: 0 auto
+
+.push
+  height: 300px
+
+#footer
+  height: 300px
+  margin: 0 auto
+  width: 940px
+  font-size: 10px
+  font-family: 'Walter Turncoat', cursive
+  background-image: url('/assets/footer.jpg')
+  background-size: 940px auto
+  .pull-left, .pull-right
+    margin-left: 10px
+    margin-right: 10px
+    margin-top: 280px
+  a
+    text-decoration: underline
+    color: #000000
