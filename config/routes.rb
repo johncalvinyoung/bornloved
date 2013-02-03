@@ -8,6 +8,8 @@ Bornloved::Application.routes.draw do
   get :schedule, :to => 'born_loved#schedule'
   get :location, :to => 'born_loved#location'
   get :speakers, :to => 'born_loved#speakers'
+  get :course, :to => 'born_loved#course'
+  get :conversation, :to => 'born_loved#course'
 
 
   # Sample of regular route:
