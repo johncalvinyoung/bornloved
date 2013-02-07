@@ -16,11 +16,11 @@
 <strong><span>Monday:</span></strong>
 </td>
 <td>
-<div><span>"Unreliable? Can I trust the Bible?</span></div>
+<div><span><a href='#unreliable_modal' data-toggle='modal' role='button'>"Unreliable? Can I trust the Bible?"</a></span></div>
 <address><span><em>- Vaughan Roberts</em></span></address>
 </td>
 <td>
-<div><span>Two perspectives and true success&nbsp;</span></div>
+<div><span><a href='#perspectives_modal' data-toggle='modal' role='button'>Two perspectives and true success</a></span></div>
 </td>
 </tr>
 <tr>
@@ -28,11 +28,11 @@
 <span><strong>Tuesday:</strong></span>
 </td>
 <td>
-<div><span>"Outdated? Hasn't science buried God?"</span></div>
-<address><span><em>- John Lennox</em></span></address>
+<div><span><a href='#outdated_modal' data-toggle='modal' role='button'>"Outdated? Hasn't science buried God?"</a></span></div>
+<address><span><em>- Ard Louis</em></span></address>
 </td>
 <td>
-<div><span>Two brothers and God's approval</span></div>
+<div><span><a href='#brothers_modal' data-toggle='modal' role='button'>Two brothers and God's approval</a></span></div>
 </td>
 </tr>
 <tr>
@@ -40,11 +40,11 @@
 <span><strong>Wednesday:</strong></span>
 </td>
 <td>
-<div><span>"Indifferent? Where is God when I suffer?"</span></div>
+<div><span><a href='#indifferent_modal' data-toggle='modal' role='button'>"Indifferent? Where is God when I suffer?"</a></span></div>
 <address><span><em>- Vince Vitale</em></span></address>
 </td>
 <td>
-<div><span>Two men and surprising destinies</span></div>
+<div><span><a href='#destinies_modal' data-toggle='modal' role='button'>Two men and surprising destinies</a></span></div>
 </td>
 </tr>
 <tr>
@@ -76,3 +76,62 @@
 %br
 =render :partial => 'course_details'
 
+#unreliable_modal.modal.hide.fade
+  .modal-header
+    %button.close{'data-dismiss' => 'modal', 'aria-hidden' => 'true'} x
+    %h3 "Unreliable? Can I trust the Bible?" &ndash; Vaughan Roberts
+  .modal-body
+    %p
+      <iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/69qrdnYg69w?rel=0" frameborder="0" allowfullscreen></iframe>
+  .modal-footer
+    %button.btn{'data-dismiss' => 'modal', 'aria-hidden' => 'true'} Close
+
+#outdated_modal.modal.hide.fade
+  .modal-header
+    %button.close{'data-dismiss' => 'modal', 'aria-hidden' => 'true'} x
+    %h3 "Outdated? Hasn't science buried God?" &ndash; Ard Louis
+  .modal-body
+    %p
+      <iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/YvLGGHiwI_c?rel=0" frameborder="0" allowfullscreen></iframe>
+  .modal-footer
+    %button.btn{'data-dismiss' => 'modal', 'aria-hidden' => 'true'} Close
+
+#indifferent_modal.modal.hide.fade
+  .modal-header
+    %button.close{'data-dismiss' => 'modal', 'aria-hidden' => 'true'} x
+    %h3 "Indifferent? Where is God when I suffer?" &ndash; Vince Vitale
+  .modal-body
+    %p
+      <iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/pQ6hbyXuE7s?rel=0" frameborder="0" allowfullscreen></iframe>
+  .modal-footer
+    %button.btn{'data-dismiss' => 'modal', 'aria-hidden' => 'true'} Close
+
+#perspectives_modal.modal.hide.fade
+  .modal-header
+    %button.close{'data-dismiss' => 'modal', 'aria-hidden' => 'true'} x
+    %h3 "Two Perspectives" &ndash; Rico Tice
+  .modal-body
+    %p
+      <iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/2p3kTcpNHOI?rel=0" frameborder="0" allowfullscreen></iframe>
+  .modal-footer
+    %button.btn{'data-dismiss' => 'modal', 'aria-hidden' => 'true'} Close
+
+#brothers_modal.modal.hide.fade
+  .modal-header
+    %button.close{'data-dismiss' => 'modal', 'aria-hidden' => 'true'} x
+    %h3 "Two Brothers" &ndash; Rico Tice
+  .modal-body
+    %p
+      <iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/0QW5jHP_w0c?rel=0" frameborder="0" allowfullscreen></iframe>
+  .modal-footer
+    %button.btn{'data-dismiss' => 'modal', 'aria-hidden' => 'true'} Close
+
+#destinies_modal.modal.hide.fade
+  .modal-header
+    %button.close{'data-dismiss' => 'modal', 'aria-hidden' => 'true'} x
+    %h3 "Two Destinies" &ndash; Rico Tice
+  .modal-body
+    %p
+      <iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/48wEYbFZ--Q?rel=0" frameborder="0" allowfullscreen></iframe>
+  .modal-footer
+    %button.btn{'data-dismiss' => 'modal', 'aria-hidden' => 'true'} Close
